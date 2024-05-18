@@ -18,15 +18,15 @@ public class Main {
 
 		try (
 		// 読み込みファイル設定
-//			FileInputStream f = new FileInputStream("C:/test.txt");
-			FileInputStream f = new FileInputStream("test.txt");  // テスト用
-			InputStreamReader fr = new InputStreamReader(f); 
+			FileInputStream f = new FileInputStream("C:/test.txt");
+//			FileInputStream f = new FileInputStream("test.txt");  // テスト用
+			InputStreamReader fr = new InputStreamReader(f, "utf-8"); 
 			BufferedReader br = new BufferedReader(fr);
 				
 		//書き込みファイル設定
-//			FileOutputStream nf = new FileOutputStream("C:/test/Bb.java");
-			FileOutputStream nf = new FileOutputStream("Bb.java");  // テスト用
-			OutputStreamWriter nfr = new OutputStreamWriter(nf); 
+			FileOutputStream nf = new FileOutputStream("C:/test/Bb.java");
+//			FileOutputStream nf = new FileOutputStream("Bb.java");  // テスト用
+			OutputStreamWriter nfr = new OutputStreamWriter(nf, "utf-8"); 
 			BufferedWriter nbr = new BufferedWriter(nfr)) {
 			
 			String strLine;						// 一行読込み文字列変数
